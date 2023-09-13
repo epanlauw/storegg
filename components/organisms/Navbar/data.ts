@@ -26,4 +26,23 @@ const MenuItem = [
   }
 ];
 
-export default MenuItem;
+const LinkAuthItem = [
+  {
+    title: "My Profile",
+    href: "/member"
+  },
+  {
+    title: "Wallet",
+    href: "/"
+  },
+  {
+    title: "Account Settings",
+    href: "/member/edit-profile"
+  },
+  {
+    title: "Log Out",
+    href: "/sign-in"
+  }
+];
+
+export default { MenuItem, LinkAuthItem };
