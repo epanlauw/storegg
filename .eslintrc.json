@@ -66,6 +66,11 @@
     ],
     "object-curly-newline": "off",
     "eslint-disable-next-line prettier/prettier": "off",
-    "prettier/prettier": 0
+    "prettier/prettier": 0,
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
