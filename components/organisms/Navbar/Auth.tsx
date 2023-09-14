@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Data from "./data";
 import LinkAuth from "./LinkAuth";
+import Image from "next/image";
 
 interface AuthProps {
   isLogin?: boolean;
@@ -22,11 +23,11 @@ const Auth = (props: Partial<AuthProps>) => {
             id="dropdownMenuLink"
             data-bs-toggle="dropdown"
             aria-expanded="false">
-            <img
+            <Image
               src="/img/avatar-1.png"
               className="rounded-circle"
-              width="40"
-              height="40"
+              width={40}
+              height={40}
               alt=""
             />
           </a>
