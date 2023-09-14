@@ -1,11 +1,13 @@
 type StepItemType = "step1" | "step2" | "step3";
 
-const StepItem: {
+interface StepItemProps {
   icon: StepItemType;
   title: string;
   desc1: string;
   desc2: string;
-}[] = [
+}
+
+const StepItem: StepItemProps[] = [
   {
     icon: "step1",
     title: "1. Start",
