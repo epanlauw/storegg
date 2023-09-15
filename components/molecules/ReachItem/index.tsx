@@ -9,6 +9,15 @@ interface ReachItemProps {
 const ReachItem = (props: Partial<ReachItemProps>) => {
   const { title, subtitle, isLast } = props;
 
+  const lastSection = isLast ? (
+    ""
+  ) : (
+    <>
+      <div className="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none" />
+      <div className="horizontal-line mt-6 mb-6 me-lg-35 ms-lg-35 d-lg-none d-block" />
+    </>
+  );
+
   return (
     <>
       <div className="me-lg-35">
@@ -19,14 +28,7 @@ const ReachItem = (props: Partial<ReachItemProps>) => {
           {subtitle}
         </p>
       </div>
-      {isLast ? (
-        ""
-      ) : (
-        <>
-          <div className="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none" />
-          <div className="horizontal-line mt-6 mb-6 me-lg-35 ms-lg-35 d-lg-none d-block" />
-        </>
-      )}
+      {lastSection}
     </>
   );
 };
