@@ -1,5 +1,5 @@
 import React from "react";
-import GameItem from "../../molecules/GameItem";
+import GameItem from "components/molecules/GameItem";
 import Data from "./data";
 
 const FeaturedGame = () => {

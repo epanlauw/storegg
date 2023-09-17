@@ -1,5 +1,5 @@
 import React from "react";
-import StepItem from "../../molecules/StepItem";
+import StepItem from "components/molecules/StepItem";
 import Data from "./data";
 
 const TransactionStep = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import ReachItem from "../../molecules/ReachItem";
+import ReachItem from "components/molecules/ReachItem";
 import Data from "./data";
 
 const Reached = () => {
