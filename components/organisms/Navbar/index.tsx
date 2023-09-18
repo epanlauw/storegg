@@ -25,7 +25,7 @@ const Navbar = () => {
                 />
               ))}
 
-              <Auth isLogin />
+              <Auth />
             </ul>
           </div>
         </div>
