@@ -15,10 +15,7 @@ const ButtonTab = (props: ButtonTabProps) => {
   });
 
   return (
-    <a
-      data-filter="*"
-      href="#"
-      className="btn btn-status rounded-pill text-sm btn-active me-3">
+    <a data-filter="*" href="#" className={btnClass}>
       {title}
     </a>
   );
