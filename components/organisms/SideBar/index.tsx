@@ -4,7 +4,13 @@ import Footer from "./Footer";
 import Data from "./data";
 import MenuItem from "./MenuItem";
 
-const SideBar = () => {
+interface SideBarProps {
+  activeMenu: "Overview" | "Transactions" | "Settings";
+}
+
+const SideBar = (props: SideBarProps) => {
+  const { activeMenu } = props;
+
   return (
     <section className="sidebar">
       <div className="content pt-50 pb-30 ps-30">
@@ -14,7 +20,7 @@ const SideBar = () => {
             <MenuItem
               key={index}
               title={item.title}
-              active={item.active}
+              active={activeMenu === item.title}
               icon={item.icon}
               href={item.href}
             />

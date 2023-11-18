@@ -5,7 +5,7 @@ import SideBar from "components/organisms/SideBar";
 const Member = () => {
   return (
     <section className="overview overflow-auto">
-      <SideBar />
+      <SideBar activeMenu="Overview" />
       <OverviewContent />
     </section>
   );

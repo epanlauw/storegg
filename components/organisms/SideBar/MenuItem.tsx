@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 import cx from "classnames";
 
 interface MenuItemProps {
@@ -24,9 +25,9 @@ const MenuItem = (props: Partial<MenuItemProps>) => {
         <Image src={`/icon/${icon}.svg`} width={25} height={25} />
       </div>
       <p className="item-title m-0">
-        <a href={href} className="text-lg text-decoration-none">
-          {title}
-        </a>
+        <Link href={`${href}`}>
+          <a className="text-lg text-decoration-none">{title}</a>
+        </Link>
       </p>
     </div>
   );
