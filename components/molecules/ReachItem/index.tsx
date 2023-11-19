@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ReachItemProps {
+export interface ReachItemProps {
   title: string;
   subtitle: string;
   isLast?: boolean;

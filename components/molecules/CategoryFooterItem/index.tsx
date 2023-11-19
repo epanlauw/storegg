@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-interface CategoryFooterItemProps {
+export interface CategoryFooterItemProps {
   title: string;
   link: string;
 }
